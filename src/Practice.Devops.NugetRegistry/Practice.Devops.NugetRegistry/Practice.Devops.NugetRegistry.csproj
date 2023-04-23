@@ -4,6 +4,9 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Package to implement packaging with Nuget</Title>
+    <Description>This is a dummy package to test and practice with GitHub actions</Description>
+    <RepositoryUrl>https://github.com/abelopezpaniagua/devops-practice-01.git</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
