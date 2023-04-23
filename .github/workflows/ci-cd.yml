@@ -1,0 +1,29 @@
+name: 'CI/CD process'
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+        
+    - name: Restore dependencies
+      run: dotnet restore src/Practice.Devops.NugetRegistry/Practice.Devops.NugetRegistry.sln
+    
+    - name: Build
+      run: dotnet build src/Practice.Devops.NugetRegistry/Practice.Devops.NugetRegistry.sln --configuration Release --no-restore --nowarn:0
+    
+    - name: Test
+      run: dotnet test tests/Practice.Devops.NugetRegistry.Test/Practice.Devops.NugetRegistry.Test.csproj --configuration Release --no-build --verbosity normal
