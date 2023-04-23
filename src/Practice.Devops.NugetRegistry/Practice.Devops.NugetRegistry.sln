@@ -5,6 +5,10 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.Devops.NugetRegistry", "Practice.Devops.NugetRegistry\Practice.Devops.NugetRegistry.csproj", "{2F6FE55E-E446-4121-AF36-5D47238145E5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E02946D8-A716-47A7-8124-40DE3FA8CA74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice.Devops.NugetRegistry.Test", "..\..\tests\Practice.Devops.NugetRegistry.Test\Practice.Devops.NugetRegistry.Test.csproj", "{B144C72F-7056-4704-879A-B9072DFC835B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{2F6FE55E-E446-4121-AF36-5D47238145E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F6FE55E-E446-4121-AF36-5D47238145E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F6FE55E-E446-4121-AF36-5D47238145E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B144C72F-7056-4704-879A-B9072DFC835B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B144C72F-7056-4704-879A-B9072DFC835B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B144C72F-7056-4704-879A-B9072DFC835B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B144C72F-7056-4704-879A-B9072DFC835B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B144C72F-7056-4704-879A-B9072DFC835B} = {E02946D8-A716-47A7-8124-40DE3FA8CA74}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {84FB3E5E-9B57-4384-9C1E-4751140365D7}
