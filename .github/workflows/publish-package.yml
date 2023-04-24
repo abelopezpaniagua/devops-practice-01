@@ -1,8 +1,8 @@
 name: 'publish package process'
 
 on:
-  push:
-    branches: [ 'main' ]
+  release:
+    types: [published]
     tags:
       - "v[0-9]+.[0-9]+.[0-9]+"
     
