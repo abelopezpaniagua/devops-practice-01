@@ -27,7 +27,7 @@ jobs:
         run: dotnet build src/Practice.Devops.NugetRegistry/Practice.Devops.NugetRegistry.sln --configuration Release --nowarn:0
       
       - name: Pack
-        run: dotnet pack --configuration Release --no-build --output .
+        run: dotnet pack src/Practice.Devops.NugetRegistry/Practice.Devops.NugetRegistry/Practice.Devops.NugetRegistry.csproj --configuration Release --no-build --output .
         
       - name: Push
         run: dotnet nuget push Practice.Devops.NugetRegistry.1.0.0.nupkg --source https://nuget.pkg.github.com/abelopezpaniagua/index.json --api-key ${NUGET_AUTH_TOKEN}
