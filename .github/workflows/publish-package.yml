@@ -30,7 +30,5 @@ jobs:
         run: dotnet pack src/Practice.Devops.NugetRegistry/Practice.Devops.NugetRegistry/Practice.Devops.NugetRegistry.csproj --configuration Release --no-build --output .
         
       - name: Push
-        run: dotnet nuget push Practice.Devops.NugetRegistry.1.0.0.nupkg --api-key ${GITHUB_TOKEN}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: dotnet nuget push Practice.Devops.NugetRegistry.1.0.1.nupkg --skip-duplicate
 
